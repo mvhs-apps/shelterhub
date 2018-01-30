@@ -1,0 +1,26 @@
+@font-face {
+  font-family: bebas neue;
+  src: url(./assets/BebasNeue.otf);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.blue-button-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+  background-color: hsl(0, 0%, 15%)
+}
+
+.blue-button {
+  background-color: hsl(190, 100%, 60%);
+  font-family: bebas neue;
+  font-size: 1.25em;
+  border: none;
+}
