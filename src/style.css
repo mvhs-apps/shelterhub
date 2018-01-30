@@ -24,3 +24,11 @@ body {
   font-size: 1.25em;
   border: none;
 }
+
+.blue-button:hover {
+  background-color: hsl(190, 100%, 55%);
+}
+
+.blue-button:active {
+  background-color: hsl(190, 100%, 50%);
+}
