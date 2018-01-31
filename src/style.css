@@ -9,7 +9,6 @@ body {
 
 .nav-bar {
   display: flex;
-  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,6 +18,7 @@ body {
 }
 
 .nav-bar_button {
+  display: block;
   background-color: hsl(120, 100%, 40%);
   color: hsl(0, 0%, 20%);
   font-family: bebas neue;
@@ -29,23 +29,21 @@ body {
   padding: 10px;
   margin: 0;
   flex: 1;
-  height: 100%;
 }
 
 .nav-bar_button:hover {
   position: relative;
-  background-color: hsl(120, 100%, 40%);
-  box-shadow: -10px -10px white;
+  background-color: hsl(120, 100%, 35%);
 }
 
 .nav-bar_button:active {
-  background-color: hsl(120, 100%, 40%);
+  background-color: hsl(120, 100%, 30%);
 }
 
 .nav-bar_header {
   color: white;
   font-family: bebas neue;
-  font-size: 2em;
+  font-size: 2.2rem;
   border: none;
   padding: 10px;
   margin: 0px 10px;
