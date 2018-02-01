@@ -33,11 +33,11 @@ body {
 
 .nav-bar_button:hover {
   position: relative;
-  background-color: hsl(120, 100%, 35%);
+  background-color: hsl(120, 100%, 37%);
 }
 
 .nav-bar_button:active {
-  background-color: hsl(120, 100%, 30%);
+  background-color: hsl(120, 100%, 34%);
 }
 
 .nav-bar_header {

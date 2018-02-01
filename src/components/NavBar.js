@@ -6,6 +6,7 @@ export default class NavBar extends Component {
       <div className="nav-bar">
         <a className="nav-bar_header">Shelterhub</a>
         <a className="nav-bar_button">About</a>
+        <a className="nav-bar_button">Sign Up</a>
         <a className="nav-bar_button">Contact Us</a>
       </div>
     );
