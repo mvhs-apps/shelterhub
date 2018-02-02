@@ -15,6 +15,7 @@ body {
   background-color: hsl(0, 0%, 15%);
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .nav-bar_button {
@@ -48,4 +49,11 @@ body {
   padding: 10px;
   margin: 0px 10px;
   flex: 8;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
 }

@@ -12,10 +12,11 @@ export default class App extends Component {
     return(
       <div>
         <NavBar />
-        <div>
-            I need your love.
+        <div className='page-body'>
+          I need your love.<br/>
+          <img src={colliePhoto.url} alt={colliePhoto.alt} />
+          look at this fine lad
         </div>
-        <img src={colliePhoto.url} alt={colliePhoto.alt} />
       </div>
     );
   }
