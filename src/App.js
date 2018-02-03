@@ -13,9 +13,7 @@ export default class App extends Component {
       <div>
         <NavBar />
         <div className='page-body'>
-          I need your love.<br/>
-          <img src={colliePhoto.url} alt={colliePhoto.alt} />
-          look at this fine lad
+          
         </div>
       </div>
     );

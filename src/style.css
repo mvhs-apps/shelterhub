@@ -3,8 +3,13 @@
   src: url(./assets/BebasNeue.otf);
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #111; */
 }
 
 .nav-bar {
@@ -13,14 +18,12 @@ body {
   width: 100%;
   top: 0;
   background-color: hsl(0, 0%, 15%);
-  margin: 0;
-  padding: 0;
   z-index: 1;
 }
 
 .nav-bar_button {
   display: block;
-  background-color: hsl(120, 100%, 40%);
+  background-color: hsl(155, 100%, 40%);
   color: hsl(0, 0%, 20%);
   font-family: bebas neue;
   font-size: 1.5em;
@@ -55,5 +58,11 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 60px;
+  top: 62px;
+  width: 100%;
+}
+
+.half-width-photo {
+  width: 50%;
+  position: absolute;
 }
