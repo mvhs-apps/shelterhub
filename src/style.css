@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: bebas neue;
   src: url(./assets/BebasNeue.otf);
@@ -9,13 +10,14 @@
 }
 
 body {
-  /* background-color: #111; */
+  background-color: #DDD;
 }
 
 .nav-bar {
   display: flex;
   position: fixed;
   width: 100%;
+  max-height: 60px;
   top: 0;
   background-color: hsl(0, 0%, 15%);
   z-index: 1;
@@ -31,17 +33,16 @@ body {
   min-width: 65px;
   text-align: center;
   padding: 10px;
-  margin: 0;
   flex: 1;
 }
 
 .nav-bar_button:hover {
   position: relative;
-  background-color: hsl(120, 100%, 37%);
+  background-color: hsl(155, 100%, 37%);
 }
 
 .nav-bar_button:active {
-  background-color: hsl(120, 100%, 34%);
+  background-color: hsl(155, 100%, 34%);
 }
 
 .nav-bar_header {
@@ -55,8 +56,6 @@ body {
 }
 
 .page-body {
-  margin: 0;
-  padding: 0;
   position: absolute;
   top: 62px;
   width: 100%;

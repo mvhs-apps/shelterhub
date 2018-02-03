@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 
 import NavBar from './components/NavBar';
 
-const colliePhoto = {
-  url: "http://www.petwave.com/-/media/Images/Center/Breed/Dogs/Herding-Group/Collie/Collie-Face.ashx",
-  alt: "Collie Photo"
-}
+import Fire from './firebase.js';
+
+const database = Fire.database();
+const auth = Fire.auth();
+
+const variable = input => <h1>{input}</h1>;
 
 export default class App extends Component {
   render() {
@@ -13,7 +15,7 @@ export default class App extends Component {
       <div>
         <NavBar />
         <div className='page-body'>
-          
+          {variable('Hello, world!')}
         </div>
       </div>
     );
