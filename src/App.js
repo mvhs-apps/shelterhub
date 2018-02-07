@@ -7,16 +7,12 @@ import Fire from './firebase.js';
 const database = Fire.database();
 const auth = Fire.auth();
 
-const variable = input => <h1>{input}</h1>;
-
 export default class App extends Component {
   render() {
     return(
-      <div>
+      <div class="page-body">
         <NavBar />
-        <div className='page-body'>
-          {variable('Hello, world!')}
-        </div>
+        <img class="half-width-image" src="http://www.pinknews.co.uk/images/foodchain.jpg" alt="Volunteers on Food Line" />
       </div>
     );
   }

@@ -14,35 +14,39 @@ body {
 }
 
 .nav-bar {
+  list-style-type: none;
   display: flex;
-  position: fixed;
   width: 100%;
-  max-height: 60px;
-  top: 0;
-  background-color: hsl(0, 0%, 15%);
-  z-index: 1;
+  max-height: 50px;
+  background-color: hsl(215, 71%, 32%);
 }
 
-.nav-bar_button {
+.nav-bar_item {
+  flex: 1;
+}
+
+#header-item {
+  flex: 8;
+}
+
+.nav-bar_item .nav-bar_button {
   display: block;
-  background-color: hsl(155, 100%, 40%);
+  background-color: hsl(183, 74%, 70%);
   color: hsl(0, 0%, 20%);
   font-family: bebas neue;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   border: none;
   min-width: 65px;
   text-align: center;
   padding: 10px;
-  flex: 1;
 }
 
 .nav-bar_button:hover {
-  position: relative;
-  background-color: hsl(155, 100%, 37%);
+  background-color: hsl(183, 74%, 66%);
 }
 
 .nav-bar_button:active {
-  background-color: hsl(155, 100%, 34%);
+  background-color: hsl(183, 74%, 62%);
 }
 
 .nav-bar_header {
@@ -50,18 +54,9 @@ body {
   font-family: bebas neue;
   font-size: 2.2rem;
   border: none;
-  padding: 10px;
-  margin: 0px 10px;
-  flex: 8;
+  /* margin: 10px; */
 }
 
-.page-body {
-  position: absolute;
-  top: 62px;
-  width: 100%;
-}
-
-.half-width-photo {
+.half-width-image {
   width: 50%;
-  position: absolute;
 }
