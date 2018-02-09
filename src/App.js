@@ -12,7 +12,7 @@ export default class App extends Component {
     return(
       <div className="page-body">
         <NavBar />
-        <img className="half-width-image" src="http://www.pinknews.co.uk/images/foodchain.jpg" alt="Volunteers on Food Line" />
+        
       </div>
     );
   }

@@ -15,18 +15,31 @@ body {
 
 .nav-bar {
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 125px);
+  grid-template-rows: 1fr;
   width: 100%;
-  max-height: 50px;
   background-color: hsl(215, 71%, 32%);
 }
 
-.nav-bar_item {
-  flex: 1;
+.nav-bar:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
 }
 
-#header-item {
-  flex: 8;
+.nav-bar:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.nav-bar:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.nav-bar:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
 }
 
 .nav-bar_item .nav-bar_button {
@@ -59,4 +72,15 @@ body {
 
 .half-width-image {
   width: 50%;
+}
+
+@media (max-width: 500px) {
+  .nav-bar {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nav-bar_item {
+    grid-column: 1;
+    grid-rows: 2;
+  }
 }
