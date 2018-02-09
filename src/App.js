@@ -10,9 +10,9 @@ const auth = Fire.auth();
 export default class App extends Component {
   render() {
     return(
-      <div class="page-body">
+      <div className="page-body">
         <NavBar />
-        <img class="half-width-image" src="http://www.pinknews.co.uk/images/foodchain.jpg" alt="Volunteers on Food Line" />
+        <img className="half-width-image" src="http://www.pinknews.co.uk/images/foodchain.jpg" alt="Volunteers on Food Line" />
       </div>
     );
   }
