@@ -12,7 +12,7 @@ export default class App extends Component {
     return(
       <div className="page-body">
         <NavBar />
-        
+        <h1>Hello</h1>
       </div>
     );
   }

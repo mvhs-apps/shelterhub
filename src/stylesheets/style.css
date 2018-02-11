@@ -81,6 +81,6 @@ body {
 
   .nav-bar_item {
     grid-column: 1;
-    grid-rows: 2;
+    grid-row: 2;
   }
 }
