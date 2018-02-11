@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import NavBar from './components/NavBar';
+import NavBar from './components/nav-bar';
+import SignInPanel from './components/sign-in-panel';
 
 import Fire from './firebase.js';
 
@@ -12,7 +13,7 @@ export default class App extends Component {
     return(
       <div className="page-body">
         <NavBar />
-        <h1>Hello</h1>
+        <SignInPanel />
       </div>
     );
   }
