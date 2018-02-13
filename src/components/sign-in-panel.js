@@ -11,11 +11,17 @@ export default class SignInPanel extends Component {
 
   render() {
     return(
-      <div className='panel-container'>
-        <label for='email-input'>Email</label>
-        <input id='email-input'/>
-        <label for='password-input'>Password</label>
-        <input id='password-input'/>
+      <div className='sign-in-panel'>
+        <div className='panel_header'>
+          <h1>Create an Account</h1>
+        </div>
+        <div className='panel_side-bar--left'>
+          
+        </div>
+        <div className='panel_side-bar--right'>
+          <input placeholder="Email"/>
+          <input placeholder="Password"/>
+        </div>
       </div>
     );
   }

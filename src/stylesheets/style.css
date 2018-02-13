@@ -1,7 +1,19 @@
+/* 
+  Cyan: hsl(183, 74%, 70%)
+  Cerulean: hsl(209, 54%, 55%)
+  Navy: hsl(215, 71%, 32%)
+  Pearl: hsl(336, 20%, 98%)
+  Hot Pink: hsl(337, 74%, 55%)
+*/
 
 @font-face {
   font-family: bebas neue;
   src: url(../assets/BebasNeue.otf);
+}
+
+@font-face {
+  font-family: Clear Sans;
+  src: url(../assets/Clear_Sans/WOFF/ClearSans-Thin.woff);
 }
 
 * {
@@ -10,7 +22,7 @@
 }
 
 body {
-  background-color: #EEE;
+  background-color: #FFF;
 }
 
 /* === NavBar Component === */
@@ -74,14 +86,48 @@ body {
 
 /* === SignInPanel Component === */
 
-.panel-container {
+.sign-in-panel {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid gray;
-  max-width: 500px;
+  max-width: 800px;
   border-radius: 5px;
+  font-family: Arial;
+  background-color: hsl(336, 20%, 98%);
+  margin: 10px;
+  padding: 10px;
 }
 
-input {
+.panel_header {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.panel_header h1 {
+  color: #333;
+  font-family: Clear Sans;
+  font-size: 3rem;
+}
+
+.panel_side-bar--left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.panel_side-bar--right {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.sign-in-panel input {
   display: block;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  grid-gap: 20px;
+  padding: 2px;
+  margin: 3px;
 }
 
 
