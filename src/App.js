@@ -8,7 +8,7 @@ export default class App extends Component {
       <div>
         <NavBar />
         <div>
-            I need your love.
+            my name is jeff
         </div>
       </div>
     );
