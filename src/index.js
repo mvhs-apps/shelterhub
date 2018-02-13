@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './style.css';
+import './stylesheets/style.css';
+import './stylesheets/sassy_style.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
