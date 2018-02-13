@@ -13,6 +13,8 @@ body {
   background-color: #EEE;
 }
 
+/* === NavBar Component === */
+
 .nav-bar {
   list-style-type: none;
   display: grid;
@@ -70,9 +72,18 @@ body {
   padding: 10px;
 }
 
-.half-width-image {
-  width: 50%;
+/* === SignInPanel Component === */
+
+.panel-container {
+  border: 1px solid gray;
+  max-width: 500px;
+  border-radius: 5px;
 }
+
+input {
+  display: block;
+}
+
 
 @media (max-width: 500px) {
   .nav-bar {
@@ -84,3 +95,8 @@ body {
     grid-row: 2;
   }
 }
+
+.half-width-image {
+  width: 50%;
+}
+
