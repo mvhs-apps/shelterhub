@@ -13,13 +13,13 @@ export default class App extends Component {
     return(
       <div className="page-body">
         <NavBar />
-<<<<<<< HEAD
+//<<<<<<< HEAD
         <div>
             my name is jeff
         </div>
-=======
+
         <SignInPanel />
->>>>>>> 33fe284c03b577fe5b4a0091789539b088e909cf
+//>>>>>>> 33fe284c03b577fe5b4a0091789539b088e909cf
       </div>
     );
   }
