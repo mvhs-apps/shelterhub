@@ -14,7 +14,6 @@ export default class App extends Component {
       <div className="page-body">
         <NavBar />
         <div>
-            my name is jeff
         </div>
 
         <SignInPanel />
