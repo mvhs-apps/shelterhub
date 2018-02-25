@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import NavBar from './components/nav-bar';
 import SignInPanel from './components/sign-in-panel';
-
 import Fire from './firebase.js';
 
 const database = Fire.database();
