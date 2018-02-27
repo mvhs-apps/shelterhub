@@ -130,6 +130,9 @@ body {
   margin: 3px;
 }
 
+.panel-side-bar--right {
+  
+}
 
 @media (max-width: 500px) {
   .nav-bar {
