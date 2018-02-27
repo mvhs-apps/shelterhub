@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return(
       <div className="page-body">
-        <SignInPage createUser={this.createUser} />
+        
       </div>
     );
   }
