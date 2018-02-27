@@ -66,6 +66,7 @@ body {
   min-width: 65px;
   text-align: center;
   padding: 10px;
+  text-decoration: none;
 }
 
 .nav-bar_button:hover {
