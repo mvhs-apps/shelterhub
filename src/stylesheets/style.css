@@ -84,6 +84,17 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 500px) {
+  .nav-bar {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nav-bar_item {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
 /* === SignInPanel Component === */
 
 .sign-in-panel {
@@ -110,12 +121,12 @@ body {
   font-size: 3rem;
 }
 
-.panel_side-bar--left {
+.panel_left-side-bar {
   grid-column: 1;
   grid-row: 2;
 }
 
-.panel_side-bar--right {
+.panel_right-side-bar {
   grid-column: 2;
   grid-row: 2;
 }
@@ -130,19 +141,11 @@ body {
   margin: 3px;
 }
 
-.panel-side-bar--right {
-  
-}
-
-@media (max-width: 500px) {
-  .nav-bar {
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .nav-bar_item {
-    grid-column: 1;
-    grid-row: 2;
-  }
+.panel_right-side-bar button {
+  background-color: hsl(183, 100%, 60%);
+  color: #333;
+  border: none;
+  padding: 5px;
 }
 
 .half-width-image {

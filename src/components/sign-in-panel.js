@@ -26,7 +26,7 @@ export default class SignInPanel extends Component {
         <div className='panel_header'>
           <h1>Create an Account</h1>
         </div>
-        <div className='panel_side-bar--left'>
+        <div className='panel_left-side-bar'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Donec congue at nisl quis pretium. Praesent euismod tempor magna vel accumsan. 
           Mauris a condimentum elit, vel fermentum sapien. 
@@ -34,7 +34,7 @@ export default class SignInPanel extends Component {
           Nulla et eros sit amet erat aliquam accumsan quis id diam. 
           Suspendisse potenti. Nullam at rutrum turpis. </p>
         </div>
-        <div className='panel_side-bar--right'>
+        <div className='panel_right-side-bar'>
           <input 
            placeholder="Email"
            value={this.state.emailInputVal}

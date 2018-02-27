@@ -8,7 +8,6 @@ const database = Fire.database();
 const auth = Fire.auth();
 
 export default class App extends Component {
-
   createUser(email, password) {
     auth.createUserWithEmailAndPassword(email, password);
   }
