@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 export default class SignInPanel extends Component {
   constructor(props) {
@@ -27,12 +28,7 @@ export default class SignInPanel extends Component {
           <h1>Create an Account</h1>
         </div>
         <div className='panel_side-bar--left'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Donec congue at nisl quis pretium. Praesent euismod tempor magna vel accumsan. 
-          Mauris a condimentum elit, vel fermentum sapien. 
-          Mauris eu augue nec orci fermentum feugiat. 
-          Nulla et eros sit amet erat aliquam accumsan quis id diam. 
-          Suspendisse potenti. Nullam at rutrum turpis. </p>
+          <p>Please sign with an existing account. If you do not have an account you can {<Link to='/contactus'>Contact Us</Link>} </p>
         </div>
         <div className='panel_side-bar--right'>
           <input 
