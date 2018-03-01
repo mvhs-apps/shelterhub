@@ -43,7 +43,7 @@ export default class SignInPanel extends Component {
            placeholder="Password"
            value={this.state.passwordInputVal}
            onChange={this.onPasswordInputChange}/>
-           <button>Submit</button>
+           <button onClick={this.props.signInUser} >Submit</button>
         </div>
       </div>
     );
