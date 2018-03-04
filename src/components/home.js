@@ -6,9 +6,13 @@ export default class Home extends Component {
     return(
       <div>
         <NavBar />
-       <p>
-            Home page
-       </p>
+        <h1>Welcome to ShelterHub!</h1>
+        <br />
+        <h2>Our mission</h2>
+        <br />
+        <br /> 
+        <h3>Want to learn more? Have any questions? Interested in joining?</h3>
+        <h3><a href="http://localhost:3000/about" >Venture here.</a></h3>
       </div>
     );
   }
