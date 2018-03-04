@@ -17,7 +17,7 @@ ReactDOM.render(
         <Route path="/signup" exact component = {SignUpPage} />
         <Route path="/about" exact component ={About} />
         <Route path="/contactus" exact component ={ContactUs} />
-        <Route path="/home" exact component ={Home} />
+        <Route path="" exact component ={Home} />
     </Switch>
 </BrowserRouter>
 ,document.getElementById('root'));
