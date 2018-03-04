@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Fire from '../firebase.js';
+
+const database = Fire.database();
+const auth = Fire.auth();
 
 export default class SignUpPanel extends Component {
   constructor(props) {
@@ -10,6 +14,7 @@ export default class SignUpPanel extends Component {
 
     this.onEmailInputChange = this.onEmailInputChange.bind(this);
     this.onPasswordInputChange = this.onPasswordInputChange.bind(this);
+    this.createUser = this.createUser.bind(this);
   }
 
   onEmailInputChange(e) {
@@ -18,6 +23,11 @@ export default class SignUpPanel extends Component {
 
   onPasswordInputChange(e) {
     this.setState({passwordInputVal: e.target.value});
+  }
+
+  createUser() {
+    auth.createUserWithEmailAndPassword(this.state.emailInputVal, this.state.passwordInputVal);
+    console.log('Created User with Credentials')
   }
 
   render() {
@@ -43,7 +53,7 @@ export default class SignUpPanel extends Component {
            placeholder="Password"
            value={this.state.passwordInputVal}
            onChange={this.onPasswordInputChange}/>
-           <button>Submit</button>
+           <button onClick={this.createUser} >Submit</button>
         </div>
       </div>
     );
