@@ -8,7 +8,7 @@ export default class NavBar extends Component {
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/about'>About</Link> </li> 
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/signin'>Sign In</Link></li> 
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/contactus'>Contact Us</Link> </li> 
-
+        <li className="nav-bar_item"> <Link className="nav-bar_button" to='/database'>Database</Link> </li>
         
         
       </ul>

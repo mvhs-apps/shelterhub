@@ -9,6 +9,7 @@ import SignInPage from './components/sign-in-page';
 import About from './components/about';
 import ContactUs from './components/contactUs';
 import Home from './components/home';
+import Database from './components/database';
 
 ReactDOM.render(
  <BrowserRouter> 
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route path="/signup" exact component = {SignUpPage} />
         <Route path="/about" exact component ={About} />
         <Route path="/contactus" exact component ={ContactUs} />
+        <Route path="/database" exact component ={Database} />
         <Route path="" exact component ={Home} />
     </Switch>
 </BrowserRouter>

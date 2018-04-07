@@ -8,4 +8,12 @@ const config = {
   messagingSenderId: "1089470789931"
 };
 firebase.initializeApp(config);
+//get elements
+const preObject = document.getElementById('object');
+
+const dbRefObject = firebase.database().ref().child('object');
+
+dbRefObject.on('value', snap => console.log(snap.val()));
+
+
 export default firebase;
