@@ -25,7 +25,7 @@ export default class SignInPanel extends Component {
     return(
       <div className='sign-in-panel'>
         <div className='panel_header'>
-          <h1>Create an Account</h1>
+          <h1>Sign In</h1>
         </div>
         <div className='panel_side-bar--left'>
           <p>Please sign with an existing account. If you do not have an account you can {<Link to='/contactus'>Contact Us</Link>}! </p>
