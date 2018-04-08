@@ -15,7 +15,10 @@ export default class About extends Component {
        <ol>
          <li>How do I join ShelterHub?</li>
          <li>Why would I join ShelterHub?</li>
-       </ol> 
+       </ol>
+	     <br />
+	     <br />
+	     <p>Just trying to see if I can commit</p>
        <br />
        <br />
        <h3>Still have unanswered questions? Still want to learn more?</h3>

@@ -30,7 +30,7 @@ body {
 .nav-bar {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr repeat(3, 125px);
+  grid-template-columns: 1fr repeat(5, 125px);
   grid-template-rows: 1fr;
   width: 100%;
   background-color: hsl(215, 71%, 32%);
@@ -156,4 +156,19 @@ body {
 /* ===About Page=== */
 .about ol {
   margin: 15px;
+}
+
+
+/* ===Profile Page=== */
+.profile-panel {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid gray;
+  max-width: 800px;
+  border-radius: 5px;
+  font-family: Arial;
+  background-color: hsl(336, 20%, 98%);
+  margin: 10px;
+  padding: 10px;
 }
