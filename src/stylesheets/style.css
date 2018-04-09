@@ -6,6 +6,13 @@
   Hot Pink: hsl(337, 74%, 55%)
 */
 
+:root {
+  --forest-green: hsl(120, 100%, 32%);
+  --light-green: hsl(120, 70%, 50%);
+  --light-green--desat1: hsl(120, 67%, 50%);
+  --light-green--desat2: hsl(120, 64%, 50%);
+}
+
 @font-face {
   font-family: bebas neue;
   src: url(../assets/BebasNeue.otf);
@@ -19,6 +26,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Helvetica;
 }
 
 body {
@@ -33,7 +41,7 @@ body {
   grid-template-columns: 1fr repeat(6, 125px);
   grid-template-rows: 1fr;
   width: 100%;
-  background-color: hsl(215, 71%, 32%);
+  background-color: var(--forest-green);
 }
 
 .nav-bar:nth-child(1) {
@@ -58,7 +66,7 @@ body {
 
 .nav-bar_item .nav-bar_button {
   display: block;
-  background-color: hsl(183, 74%, 70%);
+  background-color: var(--light-green);
   color: hsl(0, 0%, 20%);
   font-family: bebas neue;
   font-size: 1.5rem;
@@ -70,11 +78,11 @@ body {
 }
 
 .nav-bar_button:hover {
-  background-color: hsl(183, 74%, 66%);
+  background-color: var(--light-green--desat1);
 }
 
 .nav-bar_button:active {
-  background-color: hsl(183, 74%, 62%);
+  background-color: var(--light-green--desat2);
 }
 
 .nav-bar_header {
@@ -143,7 +151,6 @@ body {
 }
 
 .panel_right-side-bar button {
-  background-color: hsl(183, 100%, 60%);
   color: #333;
   border: none;
   padding: 5px;
