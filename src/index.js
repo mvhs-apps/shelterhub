@@ -8,7 +8,7 @@ import SignUpPage from './components/sign-up-page';
 import SignInPage from './components/sign-in-page';
 import ProfilePage from './components/profile-page';
 import About from './components/about';
-import ContactUs from './components/contactUs';
+import ContactUs from './components/contact-us';
 import Home from './components/home';
 import Database from './components/database';
 
