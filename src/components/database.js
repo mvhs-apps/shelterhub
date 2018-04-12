@@ -119,12 +119,12 @@ handleReset() {
 
     const anItem1 = {
         ItemName : "Toothbrush",
-        ItemQuantityNum : "23"
+        ItemQuantityNum : "EXCESS"
     }
 
     const anItem2 = {
         ItemName : "Toothpaste",
-        ItemQuantityNum : "77"
+        ItemQuantityNum : "DEFICIT"
     }
 
     const items = {
@@ -154,6 +154,7 @@ handleReset() {
       
       <div>
       <NavBar />
+
       <h1>Database</h1><button onClick={this.handleReset}>Reset List</button>
       <br /><br />
       <form onSubmit={this.handleSubmit}>
@@ -171,17 +172,28 @@ handleReset() {
             <br />
             <button type="submit" value="Submit">Add Item</button>
       </form>
+      
       <br /><br />
-      List:
-      { 
-        this.state.itemList.map( (item) => 
-          <div>
-            Item Name : {item.ItemName} <br/>
-            Item Quantity : {item.ItemQuantityNum} <br/>
-            <br/>
-          </div>
-        ) 
-      }
+      List: 
+        <table BORDER="5"    WIDTH="40%"   CELLPADDING="4" CELLSPACING="3">
+          <th >Item Name</th>
+          <th>Quantity</th>
+          {
+            this.state.itemList.map( (item) => 
+              <tr ALIGN="CENTER">
+                <td> {item.ItemName} </td>
+                <td> {item.ItemQuantityNum} </td>
+                <br/>
+                
+              </tr>
+            )
+          }
+        </table> 
+        <br />
+          Include a table with item name and status (deficit/excess) 
+          Pair up items in excess with other inventories and update shelters weekly.
+          Make sure each shelter updates their status weekly
+        <br />
     </div>
     );
   }
