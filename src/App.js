@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SignInPage from './components/sign-in-page';
+// import SignInPage from './components/sign-in-page';
 
 import Fire from './firebase.js';
 

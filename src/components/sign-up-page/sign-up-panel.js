@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fire from '../firebase.js';
+import Fire from '../../firebase.js';
 
 const database = Fire.database();
 const auth = Fire.auth();

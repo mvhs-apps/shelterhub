@@ -91,6 +91,7 @@ body {
   font-size: 2.2rem;
   border: none;
   padding: 10px;
+  text-decoration: none;
 }
 
 @media (max-width: 500px) {

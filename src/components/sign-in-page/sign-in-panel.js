@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Fire from '../firebase.js';
+import Fire from '../../firebase.js';
 import { Link } from 'react-router-dom';
 export default class SignInPanel extends Component {
   constructor(props) {

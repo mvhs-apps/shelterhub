@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import Fire from '../firebase.js';
+import Fire from '../../firebase.js';
 
 const database = Fire.database();
 const auth = Fire.auth();

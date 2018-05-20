@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from './nav-bar';
+import NavBar from '../nav-bar';
 import ProfilePanel from './profile-panel';
-import SignInPanel from './sign-in-panel';
+import SignInPanel from '../sign-in-page/sign-in-panel';
 
 export default class ProfilePage extends Component {
   render() {

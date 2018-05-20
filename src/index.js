@@ -4,11 +4,11 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './stylesheets/style.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import SignUpPage from './components/sign-up-page';
-import SignInPage from './components/sign-in-page';
-import ProfilePage from './components/profile-page';
+import SignUpPage from './components/sign-up-page/sign-up-page';
+import SignInPage from './components/sign-in-page/sign-in-page';
+import ProfilePage from './components/profile-page/profile-page';
 import About from './components/about';
-import ContactUs from './components/contact-us';
+import ContactUs from './components/contact-page/contact-us';
 import Home from './components/home';
 import Database from './components/database';
 

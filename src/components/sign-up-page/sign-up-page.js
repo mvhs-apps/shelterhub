@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './nav-bar';
+import NavBar from '../nav-bar';
 import SignUpPanel from './sign-up-panel';
 
 export default class SignUpPage extends Component {
