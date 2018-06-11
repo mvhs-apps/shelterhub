@@ -116,7 +116,6 @@ handleReset() {
     const ItemListDB = Fire.database().ref("ItemList");
     ItemListDB.remove();
 
-
     const anItem1 = {
         ItemName : "Toothbrush",
         ItemQuantityNum : "EXCESS"
@@ -155,26 +154,27 @@ handleReset() {
       <div>
       <NavBar />
 
-      <h1>Database</h1><button onClick={this.handleReset}>Reset List</button>
+      <h1>Database</h1>
       <br /><br />
       <form onSubmit={this.handleSubmit}>
-          <input 
+          <input class="textfield-test"
            placeholder="Item Name"
            value={this.state.ItemName}
            onChange={this.handleItemNameInput}/>
           
           <br />
 
-           <input 
+           <input class="textfield-test"
            placeholder="Item Quantity"
            value={this.state.ItemQuantityNum}
            onChange={this.handleItemQuantityNumInput}/>
             <br />
-            <button type="submit" value="Submit">Add Item</button>
+            <button class="textfield-test" type="submit" value="Submit">Add Item</button>
+            <button class="button-test" onClick={this.handleReset}>Reset List</button>
       </form>
       
       <br /><br />
-      List: 
+      <h1>Inventory List</h1>
         <table BORDER="5"    WIDTH="40%"   CELLPADDING="4" CELLSPACING="3">
           <th >Item Name</th>
           <th>Quantity</th>
