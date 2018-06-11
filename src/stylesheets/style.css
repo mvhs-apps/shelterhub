@@ -1,11 +1,3 @@
-/* 
-  Cyan: hsl(183, 74%, 70%)
-  Cerulean: hsl(209, 54%, 55%)
-  Navy: hsl(215, 71%, 32%)
-  Pearl: hsl(336, 20%, 98%)
-  Hot Pink: hsl(337, 74%, 55%)
-*/
-
 :root {
   --forest-green: hsl(120, 100%, 32%);
   --light-green: hsl(120, 70%, 50%);
