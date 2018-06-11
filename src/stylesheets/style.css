@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(../assets/roboto/Roboto-Light.ttf);  
+  font-family: Roboto Slim;
+  src: url(../assets/roboto/Roboto-Thin.ttf);  
 }
 
 * {
@@ -41,7 +41,12 @@ body {
   background-color: var(--forest-green);
 }
 
-.nav-bar:nth-child(1) {
+.nav-bar:nth-child(n+2) {
+  grid-column: n;
+  grid-row: 1;
+}
+
+/* .nav-bar:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
 }
@@ -59,7 +64,7 @@ body {
 .nav-bar:nth-child(4) {
   grid-column: 4;
   grid-row: 1;
-}
+} */
 
 .nav-bar_item .nav-bar_button {
   display: block;
@@ -177,3 +182,25 @@ body {
   margin: 10px;
   padding: 10px;
 }
+
+.button-test{
+  height:25px;
+  width:200px;
+  margin:5px;
+  background-color: var(hsl(336, 20%, 98%));
+}
+
+.textfield-test{
+  height:25px;
+  width:200px;
+  margin:5px;
+ 
+}
+
+/* === Home Page === */
+.home-page h1 {
+  font-family: Roboto Slim;
+  font-size: 3rem;
+}
+
+
