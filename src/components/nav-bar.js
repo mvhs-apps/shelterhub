@@ -5,11 +5,13 @@ export default class NavBar extends Component {
     return(
       <ul className="nav-bar">
        
-        <li className="nav-bar_item" id="header-item"> <Link className="nav-bar_header" to=''>Shelterhub</Link> </li> 
+        <li className="nav-bar_item" id="header-item"> <Link className="nav-bar_header" to=''>Shelterhub</Link> </li>
+        <li className="nav-bar_item"> <Link className="nav-bar_button" to='/home'>Home</Link> </li>
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/database'>Inventory</Link> </li>
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/profile'>Profile</Link> </li>
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/about'>About</Link> </li> 
         <li className="nav-bar_item"> <Link className="nav-bar_button" to='/contactus'>Contact Us</Link> </li> 
+        <li className="nav-bar_item"> <Link className="nav-bar_button" to='/settings'>Settings</Link> </li>
       
       </ul>
     );
