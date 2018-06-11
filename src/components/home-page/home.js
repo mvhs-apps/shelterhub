@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './nav-bar';
-import Fire from '../firebase.js';
-import { Link } from 'react-router-dom';
+import NavBar from '../nav-bar';
 export default class Home extends Component {
   constructor() {
     super();
