@@ -18,7 +18,7 @@ export default class ProfilePanel extends Component {
   }
 
   GuestRender() {
-    return <div className='panel_body'>Please sign up.</div>;
+  return <div className='panel_body'>Please {<Link to='/signin'>sign in</Link>}.</div>;
   }
   render() {
     return(
