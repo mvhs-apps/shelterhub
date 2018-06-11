@@ -203,4 +203,9 @@ body {
   font-size: 3rem;
 }
 
+/* === Standard font for regular text === */
+p {
+  font-family: Source Sans Serif;
+}
+
 

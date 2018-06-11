@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../nav-bar';
+import { Link } from 'react-router-dom'; 
 export default class Home extends Component {
   constructor() {
     super();
