@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(../assets/roboto/Roboto-Light.ttf);  
+  font-family: Roboto Slim;
+  src: url(../assets/roboto/Roboto-Thin.ttf);  
 }
 
 * {
@@ -194,3 +194,11 @@ body {
   width:200px;
   margin:5px;
 }
+
+/* === Home Page === */
+.home-page h1 {
+  font-family: Roboto Slim;
+  font-size: 3rem;
+}
+
+
