@@ -169,7 +169,7 @@ handleReset() {
            value={this.state.ItemQuantityNum}
            onChange={this.handleItemQuantityNumInput}/>
             <br />
-            <button class="textfield-test" type="submit" value="Submit">Add Item</button>
+            <button class="button-test" type="submit" value="Submit">Add Item</button>
             <button class="button-test" onClick={this.handleReset}>Reset List</button>
       </form>
       
