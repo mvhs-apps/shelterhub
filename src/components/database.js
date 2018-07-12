@@ -144,57 +144,54 @@ handleReset() {
     //when date is being loaded
     if (this.state.isLoading) {
       return (
-        <div className="page-content">
-        Loading Database...
+        <div>
+          <NavBar />
+          <div className="page-content">
+          Loading Database...
+          </div>
         </div>
       );
     }
     return(
       
       <div>
-      <NavBar />
+        <NavBar />
 
-      <h1>Database</h1>
-      <br /><br />
-      <form onSubmit={this.handleSubmit}>
-          <input class="textfield-test"
-           placeholder="Item Name"
-           value={this.state.ItemName}
-           onChange={this.handleItemNameInput}/>
-          
-          <br />
+        <div className="page-content">
+          <h1>Database</h1>
 
-           <input class="textfield-test"
-           placeholder="Item Quantity"
-           value={this.state.ItemQuantityNum}
-           onChange={this.handleItemQuantityNumInput}/>
-            <br />
+          <form onSubmit={this.handleSubmit}>
+            <input class="textfield-test"
+              placeholder="Item Name"
+              value={this.state.ItemName}
+              onChange={this.handleItemNameInput}/>
+            <input class="textfield-test"
+              placeholder="Item Quantity"
+              value={this.state.ItemQuantityNum}
+              onChange={this.handleItemQuantityNumInput}/>
             <button class="button-test" type="submit" value="Submit">Add Item</button>
             <button class="button-test" onClick={this.handleReset}>Reset List</button>
-      </form>
-      
-      <br /><br />
-      <h1>Inventory List</h1>
-        <table BORDER="5"    WIDTH="40%"   CELLPADDING="4" CELLSPACING="3">
-          <th >Item Name</th>
-          <th>Quantity</th>
-          {
-            this.state.itemList.map( (item) => 
-              <tr ALIGN="CENTER">
-                <td> {item.ItemName} </td>
-                <td> {item.ItemQuantityNum} </td>
-                <br/>
-                
-              </tr>
-            )
-          }
-        </table> 
-        <br />
-          Include a table with item name and status (deficit/excess) 
-          Pair up items in excess with other inventories and update shelters weekly.
-          Make sure each shelter updates their status weekly
-        <br />
-    </div>
+          </form>
+          
+          <h1>Inventory List</h1>
+          <table BORDER="5"    WIDTH="40%"   CELLPADDING="4" CELLSPACING="3">
+            <th>Item Name</th>
+            <th>Quantity</th>
+            {
+              this.state.itemList.map( (item) => 
+                <tr ALIGN="CENTER">
+                  <td> {item.ItemName} </td>
+                  <td> {item.ItemQuantityNum} </td>
+                    
+                </tr>
+              )
+            }
+          </table> 
+          // Include a table with item name and status (deficit/excess) 
+          // Pair up items in excess with other inventories and update shelters weekly.
+          // Make sure each shelter updates their status weekly
+        </div>
+      </div>
     );
   }
 }

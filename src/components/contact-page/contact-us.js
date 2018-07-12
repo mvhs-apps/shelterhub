@@ -6,9 +6,10 @@ export default class ContactUs extends Component {
     return(
       <div>
         <NavBar />
-        <h1 className="title-head">Contact Us</h1>
-        <br />
-        <p>E-mail: shelterhub.contact@gmail.com</p> 
+        <div className="page-content">
+          <h1 className="title-head">Contact Us</h1>
+          <p>E-mail: shelterhub.contact@gmail.com</p> 
+        </div>
       </div>
     );
   }
