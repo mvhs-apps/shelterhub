@@ -12,7 +12,7 @@ export default class Home extends Component {
         <NavBar />
 
         <div className="page-content">
-          <h1 className="titleHead">Welcome to ShelterHub!</h1>
+          <h1>Welcome to ShelterHub!</h1>
           <p>ShelterHub is a nonprofit organization that strives 
             to provide an easy, intuitive user interface for homeless 
             shelters and others to communicate with each other.</p>

@@ -186,10 +186,12 @@ handleReset() {
                 </tr>
               )
             }
-          </table> 
-          // Include a table with item name and status (deficit/excess) 
-          // Pair up items in excess with other inventories and update shelters weekly.
-          // Make sure each shelter updates their status weekly
+          </table>
+          <div>
+            <p>Include a table with item name and status (deficit/excess). </p>
+            <p>Pair up items in excess with other inventories and update shelters weekly. </p>
+            <p>Make sure each shelter updates their status weekly. </p>
+          </div> 
         </div>
       </div>
     );

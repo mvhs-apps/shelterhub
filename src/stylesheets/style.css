@@ -20,6 +20,21 @@
   src: url(../assets/roboto/Roboto-Thin.ttf);  
 }
 
+@font-face {
+  font-family: DINPro Regular;
+  src: url(../assets/DINPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: DINPro Black;
+  src: url(../assets/DINPro-Black.ttf);
+}
+
+@font-face {
+  font-family: DINPro Bold;
+  src: url(../assets/DINPro-Bold.ttf)
+}
+
 /* * {
   margin: 0;
   padding: 0;
@@ -205,13 +220,18 @@ body {
   font-family: Roboto Slim;
   font-size: 3rem;
 }
-.title-head {
-  font-weight: 900;
-}
 
 .page-content {
   padding: 0 10px;
-  font-family: Source Sans Pro; 
+  font-family: DINPro Regular; 
+}
+
+h1 {
+  font-family: DINPro Black; 
+}
+
+h2 {
+  font-family: DINPro Bold;
 }
 
 
