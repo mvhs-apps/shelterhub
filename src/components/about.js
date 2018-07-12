@@ -7,7 +7,7 @@ export default class About extends Component {
       <div className="about" >
         <NavBar />
         <div className="page-content">
-          <h1 className="title-head">
+          <h1>
               About Us
           </h1>
           <br />

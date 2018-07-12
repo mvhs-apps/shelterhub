@@ -49,80 +49,14 @@ body {
 }
 
 /* === NavBar Component === */
-
 .nav-bar {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr repeat(6, 125px);
-  grid-template-rows: 1fr;
-  background-color: var(--forest-green);
-  margin-top: 0;
+  font-family: DINPro Black;
+  color: Black; 
+  text-decoration: none; 
 }
 
-.nav-bar:nth-child(n+2) {
-  grid-column: n;
-  grid-row: 1;
-}
-
-/* .nav-bar:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.nav-bar:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.nav-bar:nth-child(3) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.nav-bar:nth-child(4) {
-  grid-column: 4;
-  grid-row: 1;
-} */
-
-.nav-bar_item .nav-bar_button {
-  display: block;
-  background-color: var(--light-green);
-  color: hsl(0, 0%, 20%);
-  font-family: bebas neue;
-  font-size: 1.5rem;
-  border: none;
-  min-width: 65px;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.nav-bar_button:hover {
-  background-color: var(--light-green--desat1);
-}
-
-.nav-bar_button:active {
-  background-color: var(--light-green--desat2);
-}
-
-.nav-bar_header {
-  color: white;
-  font-family: bebas neue;
-  font-size: 2.2rem;
-  border: none;
-  padding: 10px;
-  text-decoration: none;
-}
-
-@media (max-width: 500px) {
-  .nav-bar {
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .nav-bar_item {
-    grid-column: 1;
-    grid-row: 2;
-  }
+.nav-bar li {
+  display: inline; 
 }
 
 /* === SignInPanel Component === */
@@ -230,7 +164,7 @@ h1 {
   font-family: DINPro Black; 
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
   font-family: DINPro Bold;
 }
 
