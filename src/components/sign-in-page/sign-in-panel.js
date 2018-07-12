@@ -101,7 +101,7 @@ export default class SignInPanel extends Component {
           <h1>Sign In</h1>
         </div>
         <div className='panel_side-bar--left'>
-          <p>Please sign in with an existing account. If you do not have an account, you may {<Link to='/signin'>sign up here</Link>}! </p>
+          <p>Please sign in with an existing account. If you do not have an account, you may {<Link to='/signup'>sign up here</Link>}! </p>
         </div>
         <div className='panel_right-side-bar'>
           <input 

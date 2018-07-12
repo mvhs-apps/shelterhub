@@ -203,12 +203,12 @@ body {
   font-size: 3rem;
 }
 
-/* === Standard font for regular text === */
-/* === Should use this font but unsure how to implement 
-.home-page p {
+* {
   font-family: Source Sans Pro;
-  src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 }
-=== */
+
+.titleHead {
+  text-transform: uppercase;
+}
 
 

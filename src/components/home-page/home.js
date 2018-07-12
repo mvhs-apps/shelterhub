@@ -11,7 +11,7 @@ export default class Home extends Component {
       <div>
         <NavBar />
 
-        <h1>Welcome to ShelterHub!</h1>
+        <h1 className="titleHead">Welcome to ShelterHub!</h1>
 
         <br />
 

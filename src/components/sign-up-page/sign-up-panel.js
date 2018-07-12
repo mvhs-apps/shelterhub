@@ -37,12 +37,6 @@ export default class SignUpPanel extends Component {
           <h1>Create an Account</h1>
         </div>
         <div className='panel_left-side-bar'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Donec congue at nisl quis pretium. Praesent euismod tempor magna vel accumsan. 
-          Mauris a condimentum elit, vel fermentum sapien. 
-          Mauris eu augue nec orci fermentum feugiat. 
-          Nulla et eros sit amet erat aliquam accumsan quis id diam. 
-          Suspendisse potenti. Nullam at rutrum turpis. </p>
         </div>
         <div className='panel_right-side-bar'>
           <input 
