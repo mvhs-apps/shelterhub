@@ -144,7 +144,7 @@ handleReset() {
     //when date is being loaded
     if (this.state.isLoading) {
       return (
-        <div>
+        <div className="page-content">
         Loading Database...
         </div>
       );

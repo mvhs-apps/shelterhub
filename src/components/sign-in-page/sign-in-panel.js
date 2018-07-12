@@ -96,12 +96,13 @@ export default class SignInPanel extends Component {
   }*/
   render() {
     return(
-      <div className='sign-in-panel'>
+      <div className='sign-in-panel page-content'>
         <div className='panel_header'>
           <h1>Sign In</h1>
         </div>
         <div className='panel_side-bar--left'>
-          <p>Please sign in with an existing account. If you do not have an account, you may {<Link to='/signup'>sign up here</Link>}! </p>
+          <p>Please sign in with an existing account. If you do not have an account, 
+             you may {<Link to='/signup'>sign up here</Link>}! </p>
         </div>
         <div className='panel_right-side-bar'>
           <input 

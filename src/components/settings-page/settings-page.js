@@ -6,6 +6,9 @@ export default class Settings extends Component {
     return(
       <div>
         <NavBar />
+        <div className="page-content">
+          <h1 className="title-head">Settings</h1>
+        </div>
       </div>
     );
   }

@@ -20,14 +20,17 @@
   src: url(../assets/roboto/Roboto-Thin.ttf);  
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: Helvetica;
-}
+} */
 
 body {
   background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  width: 100%; 
 }
 
 /* === NavBar Component === */
@@ -37,8 +40,8 @@ body {
   display: grid;
   grid-template-columns: 1fr repeat(6, 125px);
   grid-template-rows: 1fr;
-  width: 100%;
   background-color: var(--forest-green);
+  margin-top: 0;
 }
 
 .nav-bar:nth-child(n+2) {
@@ -127,11 +130,11 @@ body {
   grid-row: 1;
 }
 
-.panel_header h1 {
+/* .panel_header h1 {
   color: #333;
   font-family: Clear Sans;
   font-size: 3rem;
-}
+} */
 
 .panel_left-side-bar {
   grid-column: 1;
@@ -202,13 +205,13 @@ body {
   font-family: Roboto Slim;
   font-size: 3rem;
 }
-
-* {
-  font-family: Source Sans Pro;
+.title-head {
+  font-weight: 900;
 }
 
-.titleHead {
-  text-transform: uppercase;
+.page-content {
+  padding: 0 10px;
+  font-family: Source Sans Pro; 
 }
 
 
