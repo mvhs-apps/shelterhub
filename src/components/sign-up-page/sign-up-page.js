@@ -7,7 +7,9 @@ export default class SignUpPage extends Component {
     return(
       <div>
         <NavBar />
-        <SignUpPanel createUser={this.props.createUser} />
+        <div className="page-content">
+          <SignUpPanel createUser={this.props.createUser} />
+        </div>
       </div>
     );
   }

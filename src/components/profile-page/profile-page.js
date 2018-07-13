@@ -8,7 +8,9 @@ export default class ProfilePage extends Component {
     return(
       <div>
         <NavBar />
-        <ProfilePanel createUser={this.props.createUser} />
+        <div className="page-content">
+          <ProfilePanel createUser={this.props.createUser} />
+        </div> 
       </div>
     );
   }

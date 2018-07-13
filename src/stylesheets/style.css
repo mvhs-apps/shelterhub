@@ -40,6 +40,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%; 
+  font-family: DINPro Regular
 }
 
 /* === NavBar Component === */
@@ -49,7 +50,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: black;
-  font-family: DINPro Black;
+  font-family: DINPro Black; 
   text-transform: uppercase; 
 }
 
@@ -85,7 +86,7 @@ li a:hover {
 
 /* === SignInPanel Component === */
 
-.sign-in-panel {
+/* .sign-in-panel {
   display: grid;
   grid-template-rows: 1fr 3fr;
   grid-template-columns: 1fr 1fr;
@@ -98,10 +99,10 @@ li a:hover {
   padding: 10px;
 }
 
-.panel_header {
+/* .panel_header {
   grid-column: 1 / 2;
   grid-row: 1;
-}
+} */
 
 /* .panel_header h1 {
   color: #333;
@@ -109,7 +110,7 @@ li a:hover {
   font-size: 3rem;
 } */
 
-.panel_left-side-bar {
+/* .panel_left-side-bar {
   grid-column: 1;
   grid-row: 2;
 }
@@ -137,7 +138,7 @@ li a:hover {
 
 .half-width-image {
   width: 50%;
-}
+} */
 
 /* ===About Page=== */
 .about ol {
@@ -194,4 +195,22 @@ h2, h3, h4, h5, h6 {
   font-family: DINPro Bold;
 }
 
+/* === Form Styling === */
+.label { 
+  margin: 10px 0; 
+}
 
+input {
+  font-family: DINPro Regular; 
+  width: 25%;
+  margin-bottom: 15px; 
+}
+
+button {
+  font-family: DINPro Regular;
+  height: 20%;
+  width: 10%;
+  border-radius: 5px;  
+  display: block; 
+  margin: 10px 0;
+}

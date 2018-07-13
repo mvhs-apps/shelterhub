@@ -20,6 +20,7 @@ export default class SignInPanel extends Component {
   onPasswordInputChange(e) {
     this.setState({passwordInputVal: e.target.value});
   }
+
   /* /////////remove this soon
   firebase.auth().getRedirectResult().then( function (result){
       // This gives you a Google Access Token. You can use it to access the Google API.
@@ -94,27 +95,28 @@ export default class SignInPanel extends Component {
       });
     });
   }*/
+
   render() {
-    return(
-      <div className='sign-in-panel page-content'>
-        <div className='panel_header'>
-          <h1>Sign In</h1>
-        </div>
-        <div className='panel_side-bar--left'>
-          <p>Please sign in with an existing account. If you do not have an account, 
-             you may {<Link to='/signup'>sign up here</Link>}! </p>
-        </div>
-        <div className='panel_right-side-bar'>
+    return (
+      <div className="page-content">
+        <h1>Sign In</h1>
+        <p>Please sign in with an existing account to view your profile. 
+           If you do not have an account, you may {<Link to='/signup'>sign 
+           up here</Link>}! </p>
+        <form>
+          <p className="label">Email</p>
           <input 
            placeholder="Email"
            value={this.state.emailInputVal}
            onChange={this.onEmailInputChange}/>
+          <p className="label">Password</p>
           <input 
+           type="password"
            placeholder="Password"
            value={this.state.passwordInputVal}
            onChange={this.onPasswordInputChange}/>
-           <button onClick={this.props.signInUser} >Submit</button>
-        </div>
+           <button onClick={this.props.signInUser}>Sign In</button>
+        </form> 
       </div>
     );
   }

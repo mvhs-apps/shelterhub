@@ -6,7 +6,6 @@ export default class SignInPage extends Component {
   render() {
     return(
       <div>
-        <NavBar />
         <SignInPanel createUser={this.props.createUser} />
       </div>
     );
