@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 export default class NavBar extends Component {
   render() {
     return(
-      <div className="nav-bar">
+      <div>
         <ul>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
-          <li><a href="/home">ShelterHub</a></li>
+          <li className="nav-bar_title"><a href="/Home">ShelterHub</a></li>
+          <li className="nav-bar_item"><a href="/Settings">Settings</a></li>
+          <li className="nav-bar_item"><a href="/About">About</a></li>
+          <li className="nav-bar_item"><a href="/ContactUs">Contact</a></li>
+          <li className="nav-bar_item"><a href="/ProfilePanel">Profile</a></li>
+          <li className="nav-bar_item"><a href="/Database">Inventory</a></li>
         </ul>
       </div>
     );
