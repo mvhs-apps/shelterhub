@@ -49,9 +49,10 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: hsl(120, 100%, 23%);
   font-family: DINPro Black; 
   text-transform: uppercase; 
+  font-size: 1.5rem; 
 }
 
 .nav-bar_title {
@@ -64,7 +65,7 @@ ul {
 
 .nav-bar_title a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; 
@@ -72,14 +73,14 @@ ul {
 
 .nav-bar_item a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: hsl(120, 100%, 23%);
+  background-color: hsl(120, 70%, 50%);
 }
 
 
