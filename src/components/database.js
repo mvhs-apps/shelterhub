@@ -8,9 +8,11 @@ export default class Database extends Component {
 
     this.state = {
       itemList: [],
+      displayList: [],
       isLoading: true,
       newName: "",
       ItemName:"",
+      searchItem:"",
       ItemQuantityNum: ""
     };
 
@@ -18,6 +20,8 @@ export default class Database extends Component {
     this.handleItemQuantityNumInput= this.handleItemQuantityNumInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
+    this.handleSearchItem = this.handleSearchItem.bind(this);
   }
   //Gets call once when loading the page
   componentWillMount() { 
@@ -60,7 +64,7 @@ updateItemList() {
         
       });
 
-      this.setState({itemList: tempItemList, isLoading: false });
+      this.setState({itemList: tempItemList, displayList: tempItemList, isLoading: false });
       
     });
   }
@@ -137,9 +141,48 @@ handleReset() {
 
     this.setState({ isLoading: false });
     this.updateItemList();
-    
-
   }
+
+  handleSearchItem(event){
+    console.log("HandleSearchItem")
+    this.setState({ searchItem : event.target.value});
+  }
+  
+  handleSearch(event){
+    event.preventDefault();
+    console.log("HandleSearch")
+    //Very Inefficient Search (Not sure how to make it more efficient) -Patrick
+    //Gets a list of all items through FireBase
+    //Compares the names of each item to the search term
+    //If any part of the word matches, add to the Display List
+    //Display list is now the list shown, not item list
+
+    //The following code get a particular table
+    const itemsDB = Fire.database().ref("ItemList");
+
+    //Store content of the database into an array to be used
+    //to set the state later.
+    const tempItemList = [];
+
+    //Get ItemList from the DB and add it to the local list.
+    itemsDB.on('value',snapshot => {
+      //Read each item in itemList
+      //Store it in a temporary array
+      snapshot.forEach(childSnapShot => {
+        //childSnapShot.key is the name of the data
+        //childSnapShot.val() is the value of the data
+
+        const fullItemName = childSnapShot.val().ItemName;
+        if (fullItemName.includes(this.state.searchItem)){
+          tempItemList.push(childSnapShot.val());
+        }
+        
+      });
+
+      this.setState({displayList: tempItemList});
+    });
+  }
+
   render() {
     //when date is being loaded
     if (this.state.isLoading) {
@@ -159,7 +202,8 @@ handleReset() {
 
         <div className="page-content">
           <h1>Database</h1>
-
+          <br />
+          <h3>Add</h3>
           <form onSubmit={this.handleSubmit}>
             <input class="textfield-test"
               placeholder="Item Name"
@@ -172,13 +216,24 @@ handleReset() {
             <button class="button-test" type="submit" value="Submit">Add Item</button>
             <button class="button-test" onClick={this.handleReset}>Reset List</button>
           </form>
-          
+
+          <br />
+
+          <h3>Search</h3>
+          <form onSubmit={this.handleSearch}>
+              <input 
+              placeholder="Name of Item"
+              value={this.state.searchItem}
+              onChange={this.handleSearchItem}/>
+              <button value="Submit">Search</button>
+          </form>
+
           <h1>Inventory List</h1>
           <table BORDER="5"    WIDTH="40%"   CELLPADDING="4" CELLSPACING="3">
             <th>Item Name</th>
             <th>Quantity</th>
             {
-              this.state.itemList.map( (item) => 
+              this.state.displayList.map( (item) => 
                 <tr ALIGN="CENTER">
                   <td> {item.ItemName} </td>
                   <td> {item.ItemQuantityNum} </td>
