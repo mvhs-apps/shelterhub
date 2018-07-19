@@ -25,8 +25,9 @@ export default class Home extends Component {
             shelters and programs currently on ShelterHub, including 
             (but not limited to) pictures, reviews, and contact 
             information.</p>
-          <p>Learn more about ShelterHub {<Link to='/about'>here</Link>}.</p>
-          <p>Contact us {<Link to='contactus'>here</Link>}.</p>
+          <p>Learn more about ShelterHub {<Link to="/about">here</Link>}.</p>
+          <p>Contact us {<Link to="contactus">here</Link>}.</p>
+          <p>Interested in becoming a member? Sign up {<Link to="/signup">here</Link>}.</p>
         </div>
       </div>
     );

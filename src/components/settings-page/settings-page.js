@@ -7,7 +7,7 @@ export default class Settings extends Component {
       <div>
         <NavBar />
         <div className="page-content">
-          <h1 className="title-head">Settings</h1>
+          <h1>Settings</h1>
         </div>
       </div>
     );

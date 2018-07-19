@@ -7,10 +7,7 @@ export default class ProfilePage extends Component {
   render() {
     return(
       <div>
-        <NavBar />
-        <div className="page-content">
           <ProfilePanel createUser={this.props.createUser} />
-        </div> 
       </div>
     );
   }
